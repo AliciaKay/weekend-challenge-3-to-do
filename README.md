@@ -1,4 +1,5 @@
-# weekend-challenge-3-to-doHello Primers!
+# weekend-challenge-3-to-do
+Hello Primers!
 
 Welcome to your 3rd weekend challenge!
 
