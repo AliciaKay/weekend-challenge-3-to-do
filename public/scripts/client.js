@@ -19,7 +19,7 @@ function getTask(){
                 console.log('line 19 of GET TASK', task);
                 var $row = $('<tr></tr>');
 
-                $row.append('<td>' + task.name + '</td>');
+                $row.append('<td>' + task.task + '</td>');
                 $row.append('<td>' + task.description + '</td>');
                 $row.append('<td>' + '<input type="checkbox" class="checked">' + '</td>');
 
