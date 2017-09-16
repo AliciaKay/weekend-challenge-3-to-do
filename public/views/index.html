@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/jquery.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap-theme.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+<title>Making Things Happen</title>
+</head>
+<body>
+    <h1>To Do:</h1>
+    <main>
+        <div id="inputDiv">
+            <input type="text", id="nameIn", placeholder="Task Name">
+            <input type="text", id="taskIn", placeholder="Task Description">
+            <button id="addButton">Add Task</button>
+        </div>
+        <div id="displayDiv">
+            <table id="taskList">
+                <thead>
+                    <th>Task</th>
+                    <th>Description</th>
+                    <th>Complete</th>
+                    <th>Delete</th>    
+                </thead>
+                <tbody id="allTasks">
+                </tbody>
+            </table>
+        </div>
+</main>
+
+</body>
+</html>
