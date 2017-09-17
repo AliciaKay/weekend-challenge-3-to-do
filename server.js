@@ -6,11 +6,11 @@ var app = express();
 var index = require('./routers/index');
 var router = require('./routers/router');
 
-app.listen(port, function() {
-    console.log('listening on port: ', port);
-});
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use('/', index);
 app.use('/tasks', router);
+
+app.listen(port, function() {
+    console.log('listening on port: ', port);
+});
