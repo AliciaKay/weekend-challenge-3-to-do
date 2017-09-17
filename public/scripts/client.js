@@ -32,7 +32,7 @@ function getTask(){
                     } else if (completeStatus === true) {
                         $row.append('<td>' + '<input class="checked" type="checkbox" data-id="' + taskId + '"checked></td>');
                     } 
-                var $deleteButton = $('<td><button class="deleteMe" data-id="' + taskId + '">Remove</button></td>');
+                var $deleteButton = $('<td><button class="deleteMe btn-danger" data-id="' + taskId + '">Remove</button></td>');
                 $row.append($deleteButton);
                 $('#allTasks').append($row); 
                 appendCompletedTask();
@@ -94,7 +94,8 @@ function completeTask() {
 function appendCompletedTask() {
     $('table tbody').find('input[class="checked"]').each(function() {
         if($(this).is(':checked')){ 
-            $('#completedTable').append($(this).parents("tr"));
+            $('#completedTable').append($(this).parents('tr'));
+            $(this).parents().addClass('success');
             $(this).replaceWith('<span class="glyphicon glyphicon-ok-sign"></span>');
             $(this).parents("tr").remove();
         }
