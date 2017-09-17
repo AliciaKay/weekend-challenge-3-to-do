@@ -30,15 +30,12 @@ function getTask(){
                 $row.append('<td>' + taskDesc + '</td>');
                     if (completeStatus === false) {
                         $row.append('<td>' + '<input class="checked" type="checkbox" data-id="' + taskId+ '"></td>');
-                        var $deleteButton = $('<td><button class="deleteMe" data-id="' + taskId + '">Remove</button></td>');
-                        $row.append($deleteButton);
-                        $('#allTasks').append($row); 
                     } else if (completeStatus === true) {
                         $row.append('<td>' + '<input class="checked" type="checkbox" data-id="' + taskId + '"checked></td>');
-                        var $deleteButton = $('<td><button class="deleteMe" data-id="' + taskId + '">Remove</button></td>');
-                        $row.append($deleteButton);
-                        $('#allTasks').append($row);
-                    }
+                    } 
+                var $deleteButton = $('<td><button class="deleteMe" data-id="' + taskId + '">Remove</button></td>');
+                $row.append($deleteButton);
+                $('#allTasks').append($row); 
         }
     })
 };
