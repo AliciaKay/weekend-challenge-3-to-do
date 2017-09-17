@@ -67,7 +67,7 @@ function deleteTask(){
     BootstrapDialog.confirm({
         title: 'Delete Task From History?',
         message: 'This action cannot be undone.',
-        type: BootstrapDialog.TYPE_DANGER, 
+        type: BootstrapDialog.TYPE_WARNING, 
         closable: true, 
         draggable: true, 
         btnCancelLabel: 'Cancel', 

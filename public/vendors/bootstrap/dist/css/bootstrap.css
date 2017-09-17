@@ -2258,7 +2258,7 @@ caption {
   text-align: left;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
 .table {
   width: 100%;
@@ -2275,6 +2275,7 @@ th {
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
+  text-align: center;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -5818,6 +5819,7 @@ button.list-group-item-danger.active:focus {
 }
 .well {
   min-height: 20px;
+  text-align: center;
   padding: 19px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
