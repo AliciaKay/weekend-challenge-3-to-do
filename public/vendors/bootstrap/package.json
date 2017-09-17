@@ -113,5 +113,8 @@
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json"
   },
   "style": "dist/css/bootstrap.css",
-  "version": "3.3.7"
+  "version": "3.3.7",
+  "dependencies": {
+    "bootstrap3-dialog": "^1.35.4"
+  }
 }
