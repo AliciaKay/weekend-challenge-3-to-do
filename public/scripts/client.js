@@ -23,7 +23,6 @@ function getTask(){
                 var taskName = task.task;
                 var taskDesc = task.description;
                 var completeStatus = task.complete;
-                };
                 console.log('line 19 of GET TASK', task);
                 var $row = $('<tr class="table-striped"></tr>');
                 $row.append('<td>' + taskName + '</td>');
@@ -36,6 +35,8 @@ function getTask(){
                 var $deleteButton = $('<td><button class="deleteMe" data-id="' + taskId + '">Remove</button></td>');
                 $row.append($deleteButton);
                 $('#allTasks').append($row); 
+                appendCompletedTask();
+                };
         }
     })
 };
